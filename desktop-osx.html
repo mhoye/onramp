@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>The Firefox Onramp - Start Hacking Now</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
+   <link rel="stylesheet" type="text/css" href="css/sandstone-resp.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="css/tabzilla.css" media="screen">
+  <body class="stone">
+      <div id="wrapper">
+        <header id="masthead">
+            <div id="tabzilla">
+                   <a href="https://www.mozilla.org/">Mozilla</a>
+            </div> 
+            <h2><a href="https://mozilla.org"><img src="img/header-mozilla-stone.png" alt="mozilla"></a></h2>
+        </header></div> 
+<article>
+  <section id="intro">
+    <div class="container">
+      <h1 class="heading-primary">Firefox Onramp</h1>
+      <h2 class="heading-secondary">Firefox on OSX</h2>
+      <h2 class="heading-tertiary">
+        Help us keep the web free and open for Mac users everywhere.
+      </h2>
+    </div>
+  </section>
+  <section id="step1">
+    <div class="container">
+      <ul>
+          <h3 class="heading-tertiary">Getting Ready</h3>
+          <p>They aren’t complicated, but there are a few prerequisites to building Firefox on OSX. You need:</p>
+            <ul>
+                <li>OSX 10.7 or later. If you're not sure, "About this Mac" under the Apple menu will tell you.</li>
+                <li>Next, check to make sure you have Python installed. Python ships by default with OSX, so you
+                    can check by opening a terminal window and typing <code>python --version</code>.</li>
+                <li>Finally, internet connection and about 40GB of free disk space for XCode, the Firefox source and
+                    room to build.</li>  
+            </ul>
+            <p>If you have all that, let’s get started!</p>
+      </ul>
+    </div>
+  </section>
+
+ <section id="step2">
+    <div class="container">
+          <h3 class="heading-tertiary">Getting Started.</h3>
+          <p>Getting set up on OSX is fast and easy.</p>
+          <p>If you don’t have one yet, create a "src" directory for yourself under your home directory: <code>cd && mkdir src</code>
+          <p>Next <a href="https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py">download the bootstrap.py script</a> and save it in your <code>src/</code> directory.</p>
+          <p>And finally, in your terminal: <code>cd ~/src</code> and start the bootstrapper like this: <code>python bootstrap.py</code></p>
+          <p>... follow the prompts. If you don't have Homebrew or Ports installed - software package managers that will let us 
+          install some programs we'll need - you'll be asked to pick one. Either will work, but most Mozilla developers use Homebrew.</p>
+    </div>
+  </section>
+
+ <section id="step3">
+    <div class="container">
+          <h3 class="heading-tertiary">Getting Access</h3>
+          <p>That last step can take some time to finish While it’s running, take a moment to sign in to Bugzilla.</p>  
+          <p><a href="https://bugzilla.mozilla.org/">Bugzilla.mozilla.org</a> is Mozilla’s issue tracker.
+             To comment on a bug or submit a patch you’ll need a Bugzilla account. You can either use your <a href="https://github.com">GitHub account</a>,
+             or you can <a target="_blank" href="https://bugzilla.mozilla.org/createaccount.cgi">sign up for a Bugzilla account here.</a></p>
+          <p>As well as Bugzilla, much of Mozilla’s internal communication happens over IRC.
+             You can <a href="http://limechat.net/mac/">download Limechat here</a>, and learn how to <a href="https://wiki.mozilla.org/IRC">connect to Mozilla with IRC here</a>.
+             If you’re just getting started or have questions about getting set up you can join us in the #introduction channel, where some of our community members hang out to try and help new contributors get rolling.</p>     
+    </div>
+  </section>
+
+  <section id="step4">
+    <div class="container">
+          <h3 class="heading-tertiary">Get The Code</h3>
+          <p>This is the last big step. In a terminal, in your <code>src/</code> directory, enter:</p>  
+          <p><code>hg clone http://hg.mozilla.org/mozilla-central/</code></p>  
+          <p>... and enter. This step uses mercurial to pull down the Firefox source code from Mozilla-Central.
+             <code>hg</code> is the chemical symbol for mercury, if you’re wondering.</p> 
+          <p>While you’re waiting for that to finish, take a look at <a target="_blank" href="http://mozilla-version-control-tools.readthedocs.org/en/latest/hgmozilla/index.html">our Mercurial documentation</a>.</p>   
+          <p>It explains how we use version control at Mozilla to manage our code and land changes to our source tree.</p>  
+    </div>
+  </section>
+
+ <section id="step5">
+    <div class="container">
+          <h3 class="heading-tertiary">Let’s Build Firefox</h3>
+          <p>You’re ready; now we can tie it all together. In your terminal:</p> 
+          <ul>
+              <li><code>cd mozilla-central</code> and then</li>
+              <li><code>./mach build</code></li>
+          </ul>
+          <p>And you’re on your way, building your own copy of Firefox from source. </p>
+          <p>Don’t get discouraged if this takes a while; Firefox is pretty big, and this takes some time on even the fastest modern machines.</p>
+    </div>
+  </section>
+
+ <section id="step6">
+    <div class="container">
+          <h3 class="heading-tertiary">Join Mozillians.org!</h3>
+          <p>There’s one more thing you can do for yourself while you’re waiting:
+             create an account for yourself on <a href="https://mozillians.org/">Mozillians</a>.
+             Mozillians is the Mozilla community directory, where you can connect with people who share your interests,
+             projects or countries. This step is optional, but we think it will be worth your while.         
+    </div>
+  </section>
+
+ <section id="step7">
+    <div class="container">
+          <h3 class="heading-tertiary">Now the fun starts.</h3>
+          <p>You have the code, you’ve compiled Firefox. Fire it up with <code>./mach run</code> and you’re ready to start hacking.
+          The next steps are up to you: join us on IRC in the <i>#introduction</i> channel, 
+          follow <a href="https://twitter.com/StartMozilla">StartMozilla on Twitter</a> and 
+          find a <a href="http://www.joshmatthews.net/bugsahoy/?simple=1">a bug to start working on</a>.
+    </div>
+  </section>
+
+
+ <section id="laststep">
+    <div class="container">
+          <h3 class="heading-tertiary">Thank you</h3>
+          <p>Mozilla's strength is the community behind it; Firefox is the product of a global
+            development team working to
+            <a href="https://www.mozilla.org/about/manifesto/">keep the Web free, open and
+            participatory</a>, and your contributions will make Firefox and the Web better for
+            hundreds of millions of people around the world.</p>
+    </div>
+  </section>
+</main>
+        </article>
+
+
+      <footer id="colophon">
+        <div class="row">
+          <div class="footer-logo">
+            <a href="http://mozilla.org/"><img src="img/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+            <p>
+              Portions of this content are ©1998–2015 by individual mozilla.org contributors.
+              Content available under a <a href="http://www.mozilla.org/foundation/licensing/website-content.html">Creative
+              Commons license</a>.
+            </p>
+            <p>You can <a href="https://github.com/mhoye/onramp">contribue to this page</a>,
+            and if you have any questions - or anything doesn't work! - 
+            <a href="mailto:mhoye@mozilla.com">contact Mike Hoye.</a></p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="http://mozilla.org/about/contact.html">Contact Us</a></li>
+            <li><a href="http://mozilla.org/privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+</body></html>
