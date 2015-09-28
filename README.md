@@ -1,4 +1,4 @@
-# Firefox OnRamp
+# Firefox Onramp
 
 This a first attempt at making it as easy as possible to go from zero to set up and ready to work on Mozilla projects,
 starting with Firefox for the Desktop and Firefox for Android.
