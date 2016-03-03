@@ -1,0 +1,10 @@
+mixin card(cardColor, cardIcon, cardTitle, cardText, url)
+
+	div(class="card" + " " + cardColor)
+		a(href= url)
+			header
+				div(class="icon" + " " + cardIcon)
+
+			div(class="card-body text-center")
+				h4= cardTitle
+				p= cardText

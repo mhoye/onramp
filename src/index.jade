@@ -1,0 +1,42 @@
+include partials/var.jade
+include partials/head.jade
+include partials/header.jade
+include partials/footer.jade
+include partials/card.jade
+
+doctype html
+html(lang="en")
+    head
+        +head(pageTitle)
+    body
+        +header
+        main(class="main-content")
+            div(class="container")
+                div(class="row")
+                    div(class="col-md-4")
+                        +card(
+                            "green",
+                            "icon-monitor",
+                            "Firefox for Desktop",
+                            "Firefox for Windows, OSX or Linux is our most popular product. Help us build the browser and developer tools that keep the Web free and open for hundreds of millions of people.",
+                            "desktop.html"
+                        )
+
+                    div(class="col-md-4")
+                        +card(
+                            "blue",
+                            "icon-mobile",
+                            "Firefox for Android",
+                            "Firefox for Android is the best browser for the worlds most popular mobile OS. Help put the power of the open Web is everybody's pocket.",
+                            "android.html"
+                        )
+
+                    div(class="col-md-4")
+                        +card(
+                            "brown",
+                            "icon-touch",
+                            "More Ways to Help",
+                            "Not sure where to start? Don't worry, there's a lot more to shipping than code; click here to start on the Web with the tools that make Firefox better every day",
+                            "options.html"
+                        )
+        +footer
