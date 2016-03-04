@@ -1,0 +1,85 @@
+// Reset Bootstrap
+// - Type Scale
+// - font-family
+// - container's max-width
+// Type Scale: 1.414 (Augmented Fourth)
+
+html {
+	font-family: $base-font-family;
+	font-size: 14px;
+}
+
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: 400;
+	line-height: 1.45;
+}
+
+a {
+	color: #0096dd;
+	
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		color: #0096dd;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-weight: 300;
+	margin: 0 0 1.414rem; // 1.414rem 0 0.5rem
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: $h1;
+}
+
+h2 {
+	font-size: $h2;
+}
+
+h3 {
+	font-size: $h3;
+}
+
+h4 {
+	font-size: $h4;
+}
+
+h5 {
+	font-size: $h5;
+}
+
+h6 {
+	font-size: $h6;
+}
+
+p {
+	margin-bottom: 1.3rem;
+}
+
+small {
+	font-size: 0.707rem;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1020px;
+	}
+}
+
+// Reset Tabzilla's background-color
+
+#tabzilla {
+	&::before {
+	    background-color: #000;
+	}
+	
+	a {
+		background-image: url("../img/tabzilla-static.png");
+	}
+}

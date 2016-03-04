@@ -1,0 +1,12 @@
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 1rem;
+$scale : 1.414;
+
+$h4: $base-font-size * $scale;
+
+$h3: $h4 * $scale;
+$h2: $h3 * $scale;
+$h1: $h2 * $scale;
+
+$h5: $h4 / $scale;
+$h6: $h5 / $scale;
