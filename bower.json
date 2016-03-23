@@ -1,0 +1,23 @@
+{
+  "name": "onramp",
+  "homepage": "https://github.com/mmhyamin/onramp",
+  "description": "The Firefox Onramp quickstart project",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Mozilla Foundation"
+  ],
+  "license": "MPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.1",
+    "mozilla-tabzilla": "^0.5.1"
+  }
+}
