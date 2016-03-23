@@ -1,24 +1,24 @@
 #site-header {
-    background-color: #F5F5F5;
+	background-color: #F5F5F5;
 
-    .site-logo {
+	.site-logo {
 		padding: 10px 0px;
 
 		img {
 			display: inline;
 			max-height: 62px;
-    	}
+		}
 	}
 }
 
 .banner {
-    position: relative;
-    background: url(../img/banner.jpg) no-repeat center center /cover;
-    text-align: center;
-    padding: 85px 0;
-    color: #fff;
+	position: relative;
+	background: url(../img/banner.jpg) no-repeat center center /cover;
+	text-align: center;
+	padding: 85px 0;
+	color: #fff;
 
-    &::before {
+	&::before {
 		content: "";
 		position: absolute;
 		top: 0;

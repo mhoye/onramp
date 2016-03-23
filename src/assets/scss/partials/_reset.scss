@@ -18,7 +18,7 @@ body {
 
 a {
 	color: #0096dd;
-	
+
 	&:focus {
 		outline: none;
 	}
@@ -76,9 +76,9 @@ small {
 
 #tabzilla {
 	&::before {
-	    background-color: #000;
+		background-color: #000;
 	}
-	
+
 	a {
 		background-image: url("../img/tabzilla-static.png");
 	}

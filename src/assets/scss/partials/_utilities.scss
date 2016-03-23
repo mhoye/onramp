@@ -8,21 +8,21 @@
 
 %icon {
 	position: relative;
-    width: 150px;
+	width: 150px;
 	height: 150px;
-    margin: 0 auto;
-    border-radius: 100%;
+	margin: 0 auto;
+	border-radius: 100%;
 	margin-bottom: 25px;
 	transition: all .2s ease-in-out;
 
-    &::before {
-    	content: "";
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	height: 100%;
-    }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .icon-monitor {
@@ -57,7 +57,7 @@
 	a {
 		text-decoration: none;
 		color: #333;
-		
+
 		&:hover .icon {
 			transform: scale(1.05);
 		}
@@ -75,6 +75,7 @@
 		.icon {
 			background-color: #8EBB49;
 		}
+
 		h4 {
 			color: #8EBB49;
 		}
@@ -84,15 +85,17 @@
 		.icon {
 			background-color: #284F8E;
 		}
+
 		h4 {
 			color: #284F8E;
 		}
 	}
-	
+
 	&.brown {
 		.icon {
 			background-color: #C76A21;
 		}
+
 		h4 {
 			color: #C76A21;
 		}
